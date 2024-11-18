@@ -1,0 +1,13 @@
+{
+  "type": "app",
+  "name": "Dashboards",
+  "version": "1.0.0",
+  "author": {
+    "name": "Alan N"
+  },
+  "description": "Corelytics Dashboard app",
+  "title": "Dashboards",
+  "entryPoints": {
+    "app": "index.html"
+  }
+}
