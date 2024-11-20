@@ -3,8 +3,8 @@
   "appType": "APP",
   "short_name": "dashboard",
   "name": "Dashboard",
-  "description": "DHIS2 Dashboard app",
-  "version": "100.3.1",
+  "description": "Corelytics Dashboard app",
+  "version": "1.0.0",
   "core_app": true,
   "launch_path": "index.html",
   "default_locale": "en",
@@ -16,7 +16,10 @@
   "icons": {
     "48": "dhis2-app-icon.png"
   },
-  "manifest_generated_at": "Mon Nov 18 2024 10:55:04 GMT+0000 (Coordinated Universal Time)",
+  "developer": {
+    "name": "Alan N"
+  },
+  "manifest_generated_at": "Wed Nov 20 2024 09:33:05 GMT+0000 (Coordinated Universal Time)",
   "display": "standalone",
   "theme_color": "#ffffff",
   "background_color": "#ffffff",

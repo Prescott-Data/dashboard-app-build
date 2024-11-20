@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunk_dhis2_app_shell=self.webpackChunk_dhis2_app_shell||[]).push([[3524],{5072:function(e,a,l){l.r(a),l.d(a,{default:function(){return s}});var t=l(2176),r="App_container__KkHQY";var s=()=>t.createElement("div",{className:r},t.createElement("img",{src:"https://res.cloudinary.com/diaxcqxfp/image/upload/v1731924506/Analyze_Data_1_xaleqz.png",alt:"Logo"}),t.createElement("p",null,"Create dashboards to visualize"),t.createElement("a",{href:""},"Click here to visualize"))}}]);
+//# sourceMappingURL=app.8469cf79.chunk.js.map
