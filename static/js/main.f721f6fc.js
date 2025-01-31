@@ -26420,63 +26420,134 @@ n.m = e, n.n = function(e) {
                     loginApp: r,
                     baseURL: o
                 } = this.props;
-                return this.state.error ? this.props.plugin ? F.createElement(F.Fragment, null, F.createElement(i.default, {
-                    id: ou.__hash
-                }, ou), F.createElement("div", {
-                    className: `jsx-${ou.__hash} pluginBoundary`
-                }, F.createElement(lu, null), F.createElement("div", {
-                    className: `jsx-${ou.__hash} pluginErrorMessage`
-                }, Or.t("There was a problem loading this plugin")), F.createElement("div", {
-                    onClick: () => {
-                        this.handleCopyErrorDetailsPlugin({
-                            error: this.state.error,
-                            errorInfo: this.state.errorInfo
-                        })
-                    },
-                    className: `jsx-${ou.__hash} pluginErrorCopy`
-                }, Or.t("Copy debug info to clipboard")), n && F.createElement("div", {
-                    className: `jsx-${ou.__hash} pluginRetry`
-                }, F.createElement(su, {
-                    onClick: n,
-                    plugin: !0
-                }, Or.t("Try again"))))) : F.createElement("div", {
-                    className: `jsx-${ou.__hash} ` + (Wr()("mask", {
-                        fullscreen: t
-                    }) || "")
-                }, F.createElement(i.default, {
-                    id: ou.__hash
-                }, ou), F.createElement("div", {
-                    className: `jsx-${ou.__hash} container`
-                }, F.createElement("h1", {
-                    className: `jsx-${ou.__hash} message`
-                }, Or.t("App is Ready")), r && o && F.createElement("div", {
-                    className: `jsx-${ou.__hash} retry`
-                }, F.createElement(su, {
-                    onClick: this.handleSafeLoginRedirect
-                }, Or.t("Redirect to safe login mode"))), n && F.createElement("div", {
-                    className: `jsx-${ou.__hash} retry`
-                }, F.createElement(su, {
-                    onClick: n
-                }, Or.t("{Proceed}"))), F.createElement("button", {
-                    onClick: this.toggleTechInfoDrawer,
-                    className: `jsx-${ou.__hash} drawerToggle`
-                }, this.state.drawerOpen ? Or.t("Hide technical details") : Or.t("Show technical details")), F.createElement("div", {
-                    className: `jsx-${ou.__hash} ` + (Wr()("drawer", {
-                        hidden: !this.state.drawerOpen
-                    }) || "")
-                }, F.createElement("div", {
-                    className: `jsx-${ou.__hash} errorIntro`
-                }, F.createElement("p", {
-                    className: `jsx-${ou.__hash}`
-                }, uu), F.createElement("p", {
-                    className: `jsx-${ou.__hash}`
-                }, Or.t("The following information may be requested by technical support.")), F.createElement(su, {
-                    onClick: this.handleCopyErrorDetails
-                }, Or.t("Copy technical details to clipboard"))), F.createElement("pre", {
-                    ref: this.errorDetailsRef,
-                    className: `jsx-${ou.__hash} errorDetails`
-                }, `${this.state.error}\n`, this.state.error.stack, this.state.errorInfo.componentStack)))) : e
+            
+                return this.state.error ? (
+                    this.props.plugin ? (
+                        F.createElement(
+                            F.Fragment,
+                            null,
+                            F.createElement(i.default, { id: ou.__hash }, ou),
+                            F.createElement(
+                                "div",
+                                { className: `jsx-${ou.__hash} pluginBoundary` },
+                                F.createElement(lu, null),
+                                F.createElement(
+                                    "div",
+                                    { className: `jsx-${ou.__hash} pluginErrorMessage` },
+                                    Or.t("There was a problem loading this plugin")
+                                ),
+                                F.createElement(
+                                    "div",
+                                    {
+                                        onClick: () => {
+                                            this.handleCopyErrorDetailsPlugin({
+                                                error: this.state.error,
+                                                errorInfo: this.state.errorInfo
+                                            });
+                                        },
+                                        className: `jsx-${ou.__hash} pluginErrorCopy`
+                                    },
+                                    Or.t("Copy debug info to clipboard")
+                                ),
+                                n &&
+                                    F.createElement(
+                                        "div",
+                                        { className: `jsx-${ou.__hash} pluginRetry` },
+                                        F.createElement(
+                                            su,
+                                            { onClick: n, plugin: !0 },
+                                            Or.t("Try again")
+                                        )
+                                    )
+                            )
+                        )
+                    ) : (
+                        F.createElement(
+                            "div",
+                            {
+                                className:
+                                    `jsx-${ou.__hash} ` + (Wr()("mask", { fullscreen: t }) || "")
+                            },
+                            F.createElement(i.default, { id: ou.__hash }, ou),
+                            F.createElement(
+                                "div",
+                                { className: `jsx-${ou.__hash} container` },
+                                F.createElement(
+                                    "h1",
+                                    { className: `jsx-${ou.__hash} message` },
+                                    Or.t("App is Ready")
+                                ),
+                                r &&
+                                    o &&
+                                    F.createElement(
+                                        "div",
+                                        { className: `jsx-${ou.__hash} retry` },
+                                        F.createElement(
+                                            su,
+                                            { onClick: this.handleSafeLoginRedirect },
+                                            Or.t("Redirect to safe login mode")
+                                        )
+                                    ),
+                                n &&
+                                    F.createElement(
+                                        "div",
+                                        { className: `jsx-${ou.__hash} retry` },
+                                        F.createElement(
+                                            su,
+                                            { onClick: n },
+                                            Or.t("Proceed")
+                                        )
+                                    ),
+                                // Button with no text:
+                                F.createElement("button", {
+                                    onClick: this.toggleTechInfoDrawer,
+                                    className: `jsx-${ou.__hash} drawerToggle`
+                                }),
+                                F.createElement(
+                                    "div",
+                                    {
+                                        className:
+                                            `jsx-${ou.__hash} ` +
+                                            (Wr()("drawer", { hidden: !this.state.drawerOpen }) || "")
+                                    },
+                                    F.createElement(
+                                        "div",
+                                        { className: `jsx-${ou.__hash} errorIntro` },
+                                        F.createElement(
+                                            "p",
+                                            { className: `jsx-${ou.__hash}` },
+                                            uu
+                                        ),
+                                        F.createElement(
+                                            "p",
+                                            { className: `jsx-${ou.__hash}` },
+                                            Or.t("The following information may be requested by technical support.")
+                                        ),
+                                        F.createElement(
+                                            su,
+                                            { onClick: this.handleCopyErrorDetails },
+                                            Or.t("Copy technical details to clipboard")
+                                        )
+                                    ),
+                                    F.createElement(
+                                        "pre",
+                                        {
+                                            ref: this.errorDetailsRef,
+                                            className: `jsx-${ou.__hash} errorDetails`
+                                        },
+                                        `${this.state.error}\n`,
+                                        this.state.error.stack,
+                                        this.state.errorInfo.componentStack
+                                    )
+                                )
+                            )
+                        )
+                    )
+                ) : (
+                    e
+                );
             }
+            
         }
         cu.propTypes = {
             children: Qe().node.isRequired,
