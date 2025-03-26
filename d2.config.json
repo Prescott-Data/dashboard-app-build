@@ -10,7 +10,7 @@
   "author": {
     "name": "Alan N"
   },
-  "description": "Corelytics Dashboard app",
+  "description": "SIMS~ Dashboard app",
   "entryPoints": {
     "app": "index.html"
   }
